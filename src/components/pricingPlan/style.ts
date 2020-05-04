@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PricingPlanContainer = styled.div`
-  border: 2px solid black;
+  box-shadow: 1px 1px 5px 0px black;
   border-radius: 10px;
   text-align: center;
   max-width: 300px;
@@ -16,6 +16,9 @@ export const PricingPlanContainer = styled.div`
   .header {
     padding: 20px 0;
     background-color: #1d74eb;
+    margin-bottom: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     h1 {
       color: #fff;
@@ -23,11 +26,13 @@ export const PricingPlanContainer = styled.div`
   }
 
   .pricing {
+    margin-bottom: 40px;
   }
 
   .benefits {
     list-style: none;
     padding: 0 20px;
+    margin-bottom: 40px;
 
     li {
       border-bottom: 1px solid rgba(0, 0, 0, 0.3);

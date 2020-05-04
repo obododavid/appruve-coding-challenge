@@ -8,7 +8,6 @@ const PricingPlan: React.FC = () => {
         <h1>Bronze plan</h1>
       </section>
       <section className="pricing">
-        <img src="" alt="" />
         <h1>$69.99</h1>
       </section>
       <ul className="benefits">
