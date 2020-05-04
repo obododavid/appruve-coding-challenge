@@ -1,4 +1,4 @@
-## Instructions For Appruve Coding Challenge
+## Guidelines For running Appruve Coding Challenge
 
 In the project directory, you can run:
 
