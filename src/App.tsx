@@ -19,8 +19,8 @@ const Plans = [
     benefits: [
       "400mb Disk space",
       "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
+      "Free four year support",
+      "Free 60gb linux hosting"
     ]
   },
   {
@@ -29,8 +29,8 @@ const Plans = [
     benefits: [
       "1gb Disk space",
       "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
+      "Free ten year support",
+      "Free 150gb linux hosting"
     ]
   }
 ];
