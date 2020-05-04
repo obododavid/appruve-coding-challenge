@@ -44,7 +44,7 @@ export const PricingPlanContainer = styled.div`
   .button {
     color: #000;
     background-color: #fff;
-    border: 2px solid;
+    border: 1px solid;
     border-color: #1d74eb;
     border-radius: 5px;
     padding: 10px;
