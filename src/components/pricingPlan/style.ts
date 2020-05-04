@@ -13,6 +13,12 @@ export const PricingPlanContainer = styled.div`
     margin-right: 0;
   }
 
+  @media (max-width: 765px) {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
   .header {
     padding: 20px 0;
     background-color: #1d74eb;
