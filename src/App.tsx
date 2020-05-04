@@ -1,44 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AppContainer } from "./Appstyles";
 import PricingPlan from "./components/pricingPlan/pricingPlan";
-
-const Plans = [
-  {
-    name: "Bronze Plan",
-    price: "$69.99",
-    benefits: [
-      "100mb Disk space",
-      "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
-    ]
-  },
-  {
-    name: "Silver Plan",
-    price: "$99.99",
-    benefits: [
-      "400mb Disk space",
-      "Unlimited download",
-      "Free four year support",
-      "Free 60gb linux hosting"
-    ]
-  },
-  {
-    name: "Gold Plan",
-    price: "$169.99",
-    benefits: [
-      "1gb Disk space",
-      "Unlimited download",
-      "Free ten year support",
-      "Free 150gb linux hosting"
-    ]
-  }
-];
+import fetchPlans from "./mocks/pricingPlan";
 
 const App = () => {
+  const [plans, setPlans] = useState([]);
+
+  useEffect(() => {
+    fetchPlans().then(res => setPlans(res.data.plans));
+  }, []);
   return (
     <AppContainer>
-      {Plans.map(plan => {
+      {plans.map(plan => {
         const { name, price, benefits } = plan;
         return (
           <PricingPlan
