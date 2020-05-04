@@ -1,5 +1,5 @@
-import React from 'react';
-import PricingPlan from './components/pricingPlan/pricingPlan';
+import React from "react";
+import PricingPlan from "./components/pricingPlan/pricingPlan";
 
 const App = () => {
   return (
@@ -7,7 +7,7 @@ const App = () => {
       Refactor template
       <PricingPlan />
     </div>
-  )
-}
+  );
+};
 
 export default App;
