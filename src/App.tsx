@@ -1,12 +1,14 @@
 import React from "react";
+import { AppContainer } from "./Appstyles";
 import PricingPlan from "./components/pricingPlan/pricingPlan";
 
 const App = () => {
   return (
-    <div>
-      Refactor template
+    <AppContainer>
       <PricingPlan />
-    </div>
+      <PricingPlan />
+      <PricingPlan />
+    </AppContainer>
   );
 };
 
