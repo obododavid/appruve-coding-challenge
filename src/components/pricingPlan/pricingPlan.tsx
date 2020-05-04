@@ -1,20 +1,25 @@
 import React from "react";
 import { PricingPlanContainer } from "./style";
 
-const PricingPlan: React.FC = () => {
+interface Props {
+  name: string;
+  price: string;
+  benefits: string[];
+}
+
+const PricingPlan: React.FC<Props> = ({ name, price, benefits }) => {
   return (
     <PricingPlanContainer>
       <section className="header">
-        <h1>Bronze plan</h1>
+        <h1>{name}</h1>
       </section>
       <section className="pricing">
-        <h1>$69.99</h1>
+        <h1>{price}</h1>
       </section>
       <ul className="benefits">
-        <li>100mb Disk space</li>
-        <li>Unlimited download</li>
-        <li>Free one year support</li>
-        <li>Free 15gb linux hosting</li>
+        {benefits.map(benefit => {
+          return <li key={benefit}>{benefit}</li>;
+        })}
       </ul>
       <button className="button">Purchase Now</button>
     </PricingPlanContainer>

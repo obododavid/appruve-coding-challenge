@@ -4,7 +4,7 @@ import PricingPlan from "./components/pricingPlan/pricingPlan";
 
 const Plans = [
   {
-    name: "Bronze",
+    name: "Bronze Plan",
     price: "$69.99",
     benefits: [
       "100mb Disk space",
@@ -14,7 +14,7 @@ const Plans = [
     ]
   },
   {
-    name: "Silver",
+    name: "Silver Plan",
     price: "$99.99",
     benefits: [
       "400mb Disk space",
@@ -24,7 +24,7 @@ const Plans = [
     ]
   },
   {
-    name: "Gold",
+    name: "Gold Plan",
     price: "$169.99",
     benefits: [
       "1gb Disk space",
@@ -38,9 +38,17 @@ const Plans = [
 const App = () => {
   return (
     <AppContainer>
-      <PricingPlan />
-      <PricingPlan />
-      <PricingPlan />
+      {Plans.map(plan => {
+        const { name, price, benefits } = plan;
+        return (
+          <PricingPlan
+            key={name}
+            name={name}
+            price={price}
+            benefits={benefits}
+          />
+        );
+      })}
     </AppContainer>
   );
 };
