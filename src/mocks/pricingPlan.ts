@@ -8,9 +8,7 @@ const plans = [
     price: "$69.99",
     benefits: [
       "100mb Disk space",
-      "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
+
     ]
   },
   {
@@ -18,9 +16,7 @@ const plans = [
     price: "$99.99",
     benefits: [
       "400mb Disk space",
-      "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
+
     ]
   },
   {
@@ -28,9 +24,7 @@ const plans = [
     price: "$169.99",
     benefits: [
       "1gb Disk space",
-      "Unlimited download",
-      "Free one year support",
-      "Free 15gb linux hosting"
+
     ]
   }
 ];
